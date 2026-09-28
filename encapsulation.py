@@ -164,4 +164,5 @@ obj = vote()
 obj.eligible
 obj.eligible = 19
 obj.eligible
-obj.eligible = int(input("enter yout= 
+obj.eligible = int(input("enter your current age"))
+obj.eligible
