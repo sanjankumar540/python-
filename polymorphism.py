@@ -40,7 +40,7 @@ class n(m):
         self.b=b
 obj = n()
 obj.sample(10)
-print(obj.__dict__)   """
+print(obj.__dict__)  
 
 class Student:
     name = "pranav"
@@ -49,5 +49,74 @@ class Student:
     def __str__(self):
         return self.name
 obj = Student()
-print(obj)
+print(obj)   
+
+# dunder methods or magic methods
+
+class A:
+    def __init__(self,a):
+        self.value = a
+    def __add__(self,other):
+        return f" {self.value} + {other.value} = {self.value +other.value} "
+    
+    def __sub__(self,other):
+        return f" {self.value} - {other.value} = {self.value - other.value} "
+
+    def __mul__(self,other):
+        return f" {self.value} * {other.value} = {self.value * other.value} "
+
+    def __truediv__(self,other):
+        return f" {self.value} / {other.value} = {self.value / other.value} "
+
+    def __floordiv__(self,other):
+        return f" {self.value} // {other.value} = {self.value // other.value} "
+
+    def __mod__(self,other):
+        return f" {self.value} % {other.value} = {self.value % other.value} "
+
+    def __gt__(self,other):
+        return f" {self.value} > {other.value} = {self.value > other.value} "
+
+    def __lt__(self,other):
+        return f" {self.value} < {other.value} = {self.value < other.value} "
+
+    def __eq__(self,other):
+        return f" {self.value} == {other.value} = {self.value == other.value} "
+obj = A(100)
+obj1 = A(10)
+print(obj+obj1)
+print(obj-obj1)
+print(obj*obj1)
+print(obj/obj1)
+print(obj//obj1)
+print(obj%obj1)
+print(obj>obj1)
+print(obj<obj1)
+print(obj==obj1)   
+
+
+class A:
+    def __init__(self):
+        self.a=10
+class B:
+    def __init__(self):
+        self.b=11
+
+obj = A()
+obj = B()
+print(obj.__dict__)  """
+
+
+class plane :
+    def fly(self):
+        print("plane flies")
+class crow: 
+    def fly(self):
+        print("crow flies")
+
+def start_flying(obj):
+    obj.fly()
+start_flying(plane())
+start_flying(crow())
+        
 
