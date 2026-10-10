@@ -34,3 +34,48 @@ def palindrome():
     else:
         print("not a palindrome")
 palindrome()
+
+def timer(func):
+    def wrapper():
+        import time
+        start = time.time()
+        func()
+        end = time.time()
+        print(end-start)
+    return wrapper
+
+@timer
+def palindrome():
+    s = input("enter your string")
+    t = ""
+    for i in s:
+        t = i+t   
+    if t == s:
+        print("palindrome")
+    else:
+        print("not a palindrome")
+palindrome()
+
+
+
+def timer(func):
+    def wrapper():
+        import time
+        start = time.time()
+        func()
+        end = time.time()
+        print(end-start)
+    return wrapper
+
+@timer
+def palindrome():
+    s = input("enter your string")
+    t = ""
+    for i in s:
+        t = i+t   
+    if t == s:
+        print("palindrome")
+    else:
+        print("not a palindrome")
+palindrome()
+
