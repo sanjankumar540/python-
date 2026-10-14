@@ -86,7 +86,7 @@ def outer(b,c):
         print(a,b,c)
     inner()
 outer(30,40)
-print(b,c)   """
+print(b,c)   
 
 
 
@@ -100,6 +100,9 @@ def outer(b,c):
         c=12
         print(a,b,c)
     inner()
-outer(30,40)
+outer(30,40)   """
+
+
+
 
 
